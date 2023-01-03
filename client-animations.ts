@@ -1,3 +1,12 @@
+// Function on client that handles calculating proper animation values.
+
+// How it works:
+// Websocket server triggers action based on some event and then sends message
+// to the client with animation name, timestamp of creation and duration in miliseconds.
+// Then here the proper x, y and rotation are calculated with these values for each desired part.
+// Parts for player can be - "head", "armLeft" and "armRight" for example.
+// Calculated x, y and rotation are then used to draw these parts properly on HTML Canvas Element.
+
 import {
   Animation,
   OldAnimation,
